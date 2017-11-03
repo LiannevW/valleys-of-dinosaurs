@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 module ValleysOfDinosaurs
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    # config.load_default 5.1
     console do
     ActiveRecord::Base.connection
   end
