@@ -1,6 +1,10 @@
-
 <h1>Dinosaurs</h1>
 <p>Welcome to the nerdy dinosaurs page!</p>
 <% @dinosaurs.each do |dinosaur| %>
-  <p><%= dinosaur.name %></p>
+    <p><%= link_to dinosaur.name, dinosaur_path(dinosaur.id) %></p>
+
+<hr>
+
+<%= link_to "[New Dinosaur]", new_dinosaur_path %>
+
 <% end %>
